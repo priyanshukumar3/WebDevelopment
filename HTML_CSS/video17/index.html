@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+
+    
+    <style>
+        /* <!-- class selector --> */
+        .red{
+            background-color: rgb(255, 115, 0);
+            color:aqua;
+        }
+        /* id selector */
+        #green{
+            background-color: rgba(225, 255, 0, 0.877);
+            color: green;
+        }
+        /* child selector if p is direct child of div*/
+        div > p { 
+            background-color: rgba(210, 12, 12, 0.793);
+            color:blue
+        }
+        /* decendent selector if p is not direct child of div*/
+        div p {
+            background-color: rgba(210, 12, 12, 0.793);
+            color:blue
+        }
+        /* universal selector */
+        * {
+            margin : 0;
+            padding : 0;
+        }
+        /* Psudo Selector */
+        a:visited {
+            color : rgb(255, 0, 230);
+        }
+
+        a:link {
+            color : green;
+        }
+
+        a:active {
+            background-color : red;
+        }
+
+        a:hover {
+            background-color: blue;
+        }
+
+        p:first-child {
+            background-color: rgb(20, 111, 111);
+        }
+    </style>
+    
+
+</head>
+<body>
+    <main class="first">
+        <p>I am first child</p>
+        <p>I am second child</p>
+    </main>
+    <div class="red">
+        Hay I am div
+    </div>
+    <div id="green">
+        Hay I am another div
+        <span>
+            <!-- this is also first child -->
+            <p>I am para inside div</p> 
+        </span>
+    </div>
+    <a href="https://www.google.com">Go To Google</a>
+    <a href="https://www.facebook2.com">Go To Facebook</a>
+    
+</body>
+</html>

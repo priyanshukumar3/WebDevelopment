@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiColor WebSite - Ex - 4</title>
+    <style>
+        :root {
+            --primary-color : rgb(149, 0, 149);
+            --text-color : white;
+            --secondry-color : rgb(193, 149, 193);
+        }
+        /* :root {
+            --primary-color : rgb(0, 7, 149);
+            --text-color : white;
+            --secondry-color : rgb(149, 157, 193);
+        }  */
+        /* :root {
+            --primary-color : rgb(65, 159, 19);
+            --text-color : white;
+            --secondry-color : rgb(156, 192, 157);
+        } */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: var(--secondry-color);
+        }
+        nav {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+        }
+
+        ul li {
+            display: inline;
+            list-style: none;
+            padding: 23px;
+            font-weight: bold;
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Contect</a></li>
+                <li><a href="/">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

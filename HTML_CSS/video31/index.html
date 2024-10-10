@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        @media screen and (orientation : portrait) {
+            /* landscape */
+            body {
+                border : 3px solid white;
+            }
+        }
+
+        @media only screen and (max-width : 455px) {
+            body{
+                background-color: blue;
+            }
+            .boxes {
+                flex-direction: column;
+            }
+        }
+        
+        .box {
+            background-color: aqua;
+            height: 133px;
+            width: 133px;
+            margin: 3px;
+            padding: 3px;
+        }
+        .boxes {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <div>Hay, I am a red guy.</div>
+
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

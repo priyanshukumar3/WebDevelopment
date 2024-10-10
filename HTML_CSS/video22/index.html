@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Sizing Units</title>
+
+    <style>
+        * {
+            margin : 0;
+            padding: 0;
+        }
+        html {
+            font-size: 12px;
+        }
+        .box {
+            box-sizing: border-box;
+            border : 2px solid black;
+            width: 80vw;
+            height: 80vh;
+            margin : auto;
+            background-color: aqua;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border : 2px solid black;
+            width: 80vw;
+            min-height: 80vh;
+            height: 100vh;
+            margin : 22px auto;
+            background-color: aqua;
+        }
+        .container p {
+            font-size: 2em;
+            /* 50% mines 50% of his parent height */
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis modi, obcaecati aliquid nihil amet corporis rerum cumque, quisquam reiciendis exercitationem tempore nam laboriosam vitae optio perferendis officia odit dolore? Non aut ipsa harum accusantium.</p>
+    </div>
+    
+</body>
+</html>
