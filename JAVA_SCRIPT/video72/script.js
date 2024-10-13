@@ -1,7 +1,7 @@
 console.log("Script.js initializing....")
 
-// let boxes = document.getElementsByClassName("box")
-let boxes = document.querySelector(".container").children
+let boxes = document.getElementsByClassName("box")
+// let boxes = document.querySelector(".container").children
 
 function getRandomColor() {
     let val1 = Math.floor(0 + Math.random() * 255)
